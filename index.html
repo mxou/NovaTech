@@ -4,69 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>NovaTech</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="./assets/imgs/logo.webp" alt="Logo NovaTech" />
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">A propos</a></li>
-          <li><a href="#">Contact</a></li>
+    <header class="fixed top-0 w-[100vw] items-center z-10 bg-[#c6e4fe] shadow-sm py-2">
+      <nav class="flex flex-row items-center justify-evenly px-2">
+        <img src="./assets/imgs/logo.webp" alt="Logo NovaTech" class="w-12 h-auto" />
+        <ul class="flex flex-row gap-5">
+          <li><a class="text-[#1a1a1a] text-xl font-bold transition hover:text-[#2765d8]" href="#">Accueil</a></li>
+          <li><a class="text-[#1a1a1a] text-xl font-bold transition hover:text-[#2765d8]" href="#">Services</a></li>
+          <li><a class="text-[#1a1a1a] text-xl font-bold transition hover:text-[#2765d8]" href="#">A propos</a></li>
+          <li><a class="text-[#1a1a1a] text-xl font-bold transition hover:text-[#2765d8]" href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section id="hero_section">
-      <h1>Agence NovaTech</h1>
-      <h3>Des solutions numériques pour votre croissant</h3>
-      <p>NovaTech accompagne les PME dans leur transformations digitales</p>
-      <a href="#services_section">Découvrir nos services</a>
+    <section id="hero_section" class="grid content-center h-[100vh] text-center relative">
+      <h1 class="text-5xl font-bold text-[#1a1a1a] mb-2">Agence NovaTech</h1>
+      <h3 class="text-2xl font-bold text-[#2765d8] mb-2">Des solutions numériques pour votre croissant</h3>
+      <p class="text-lg color-[#4a4a4a] mb-4">NovaTech accompagne les PME dans leur transformations digitales</p>
+      <a href="#services_section" class="text-white bg-[#2765d8] px-3 py-2 rounded-lg inline-block font-bold text-base hover:bg-[#1679db] transition"
+        >Découvrir nos services</a
+      >
     </section>
-    <section id="services_section">
-      <p class="service_title">Nos services</p>
-      <div class="services_container">
-        <div class="service">
-          <img src="./assets/imgs/search.svg" alt="Icone du service" />
-          <div class="service_info">
-            <p class="service_title">Sites web</p>
+    <section id="services_section" class="flex flex-col items-center justify-center min-h-[100vh] bg-gray-50">
+      <p class="service_title text-3xl font-bold text-[#1a1a1a] mb-5 text-center">Nos services</p>
+      <div class="services_container flex flex-row justify-center gap-4 max-w-7xl w-[100%] items-center">
+        <div
+          class="service w-80 h-80 rounded-xl bg-white flex flex-col justify-center items-center p-5 shadow-2xl transition border border-[#e2e8f0] hover:-translate-y-1"
+        >
+          <img src="./assets/imgs/search.svg" alt="Icone du service" class="w-16 h-auto mb-5 hue-rotate-220 saturate-1.2" />
+          <div class="service_info text-center">
+            <p class="service_title text-2xl font-bold text-[#2765d8] mb-3">Sites web</p>
             <p>Création de votre site web, en vanilla ou a l'aide de framework tel que React, NextJS ou autres.</p>
           </div>
         </div>
-        <div class="service">
-          <img src="./assets/imgs/search.svg" alt="Icone du service" />
-          <div class="service_info">
-            <p class="service_title">Application mobile</p>
+        <div
+          class="service w-80 h-80 rounded-xl bg-white flex flex-col justify-center items-center p-5 shadow-2xl transition border border-[#e2e8f0] hover:-translate-y-1"
+        >
+          <img src="./assets/imgs/search.svg" alt="Icone du service" class="w-16 h-auto mb-5 hue-rotate-220 saturate-1.2" />
+          <div class="service_info text-center">
+            <p class="service_title text-2xl font-bold text-[#2765d8] mb-3">Application mobile</p>
             <p>Création d'applications mobiles en tout genre, jeux vidéos, logiciel pour votre entreprise.</p>
           </div>
         </div>
-        <div class="service">
-          <img src="./assets/imgs/search.svg" alt="Icone du service" />
-          <div class="service_info">
-            <p class="service_title">Déploiement</p>
-            <p>Déploiement de votre site ou application. Vous nous avez fait confiance pour développer votre projet ? Nous nous occupons de son déploiment</p>
+        <div
+          class="service w-80 h-80 rounded-xl bg-white flex flex-col justify-center items-center p-5 shadow-2xl transition border border-[#e2e8f0] hover:-translate-y-1"
+        >
+          <img src="./assets/imgs/search.svg" alt="Icone du service" class="w-16 h-auto mb-5 hue-rotate-220 saturate-1.2" />
+          <div class="service_info text-center">
+            <p class="service_title text-2xl font-bold text-[#2765d8] mb-3">Déploiement</p>
+            <p>Déploiement de votre site ou application, avec prise en charge de l'entretien</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="about_section">
-      <p>A propos de NovaTech</p>
-      <p>
+    <section id="about_section" class="px-28 py-5 text-center max-w-3xl mx-auto my-0">
+      <p class="text-4xl font-bold text-[#1a1a1a] mb-8">A propos de NovaTech</p>
+      <p class="text-2xl text-[#4a5568] text-justify">
         NovaTech est une start-up passionée par la tech, dédiée a rendre le digital simple et accessible pour tout le monde. Depuis plus de 3 siècles nous
         sommes investis dans la présence en ligne de nos clients
       </p>
     </section>
-    <section id="contact_section">
-      <p>Contactez nous !</p>
-      <form action="">
-        <input type="text" placeholder="Votre nom" />
-        <input type="text" placeholder="Votre adresse mail" />
-        <textarea name="" id="" placeholder="Votre message"></textarea>
-        <button>Envoyer</button>
+    <section id="contact_section" class="px-24 py-5 bg-[#2765d8] text-white text-center">
+      <p class="text-4xl font-bold mb-10">Contactez nous !</p>
+      <form action="" class="max-w-xl mx-auto my-0 flex flex-col gap-5">
+        <input
+          type="text"
+          placeholder="Votre nom"
+          class="px-4 py-5 border-0 rounded-sm text-lg text-[#1a1a1a] transition bg-[#fffffff2] focus:outline-0 focus:bg-white focus:shadow-2xs"
+        />
+        <input
+          type="text"
+          placeholder="Votre adresse mail"
+          class="px-4 py-5 border-0 rounded-sm text-lg text-[#1a1a1a] transition bg-[#fffffff2] focus:outline-0 focus:bg-white focus:shadow-2xs"
+        />
+        <textarea
+          name=""
+          id=""
+          placeholder="Votre message"
+          class="px-4 py-5 border-0 rounded-sm text-lg text-[#1a1a1a] transition bg-[#fffffff2] focus:outline-0 focus:bg-white focus:shadow-2xs min-h-32 resize-y"
+        ></textarea>
+        <button
+          class="px-4 py-7 bg-white text-[#2765d8] border-0 rounded-md text-xl font-bold cursor-pointer transition shadow-2xl hover:bg-[#f1f5f9] hover:-translate-y-px shadow-2xs"
+        >
+          Envoyer
+        </button>
       </form>
     </section>
-    <footer>
+    <footer class="bg-[#1a1a1a] text-white text-center px-7 py-5 text-base">
       <p>2025 NovaTech - Tous droits réservés</p>
     </footer>
     <script src="./assets/script/script.js"></script>

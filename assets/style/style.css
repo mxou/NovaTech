@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
 /* font-family: "Rethink Sans", sans-serif; */
+@import "tailwindcss";
 
 * {
   box-sizing: border-box;
@@ -9,7 +10,7 @@
   font-family: "Rethink Sans", sans-serif;
 }
 
-header {
+/* header {
   position: fixed;
   top: 0;
   left: 0;
@@ -17,9 +18,9 @@ header {
   width: 100vw;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
-header nav {
+/* header nav {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -49,19 +50,19 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #2765d8;
-}
+} */
 
 #hero_section {
-  height: 100vh;
-  display: grid;
-  place-content: center;
-  text-align: center;
+  /* height: 100vh; */
+  /* display: grid; */
+  /* place-content: center; */
+  /* text-align: center; */
   background: url(./../imgs/bgimagehero.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
 }
 
-#hero_section::before {
+/* #hero_section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -75,23 +76,23 @@ header nav ul li a:hover {
 #hero_section > * {
   position: relative;
   z-index: 2;
-}
+} */
 
-#hero_section h1 {
+/* #hero_section h1 {
   font-size: 3rem;
   font-weight: 800;
   color: #1a1a1a;
   margin-bottom: 15px;
-}
+} */
 
-#hero_section h3 {
+/* #hero_section h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #2765d8;
   margin-bottom: 10px;
-}
+} */
 
-#hero_section p {
+/* #hero_section p {
   font-size: 1.1rem;
   color: #4a4a4a;
   margin-bottom: 25px;
@@ -114,36 +115,36 @@ header nav ul li a:hover {
   background-color: #1e4fa0;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(39, 101, 216, 0.4);
-}
+} */
 
-#services_section {
+/* #services_section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   padding: 80px 20px;
-  background-color: #f8fafc;
-}
+  background-color: #0f7be7;
+} */
 
-#services_section > .service_title {
+/* #services_section > .service_title {
   font-size: 2.5rem;
   font-weight: 800;
   color: #1a1a1a;
   margin-bottom: 50px;
   text-align: center;
-}
+} */
 
-.services_container {
+/* .services_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 30px;
   max-width: 1200px;
   width: 100%;
-}
+} */
 
-.service {
+/* .service {
   width: 350px;
   height: 320px;
   border-radius: 12px;
@@ -161,8 +162,8 @@ header nav ul li a:hover {
 .service:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
+} */
+/* 
 .service img {
   width: 64px;
   height: auto;
@@ -185,8 +186,9 @@ header nav ul li a:hover {
   font-size: 1rem;
   color: #64748b;
   line-height: 1.6;
-}
+} */
 
+/* 
 #about_section {
   padding: 100px 20px;
   background-color: #ffffff;
@@ -207,8 +209,9 @@ header nav ul li a:hover {
   color: #4a5568;
   line-height: 1.8;
   text-align: justify;
-}
+} */
 
+/* 
 #contact_section {
   padding: 100px 20px;
   background: linear-gradient(135deg, #2765d8, #1e4fa0);
@@ -280,7 +283,7 @@ footer {
   text-align: center;
   padding: 30px 20px;
   font-size: 1rem;
-}
+} */
 
 @media (max-width: 768px) {
   header nav {
